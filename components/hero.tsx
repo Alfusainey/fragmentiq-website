@@ -67,7 +67,7 @@ export function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-muted/50 w-fit">
               <span className="text-sm font-medium text-muted-foreground">
-                Recurring Code Fragments
+                Distributed Code Intelligence
               </span>
             </div>
 

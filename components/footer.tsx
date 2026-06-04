@@ -26,7 +26,7 @@ export function Footer() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-serif italic text-foreground">
-              Distributed Code Intelligence
+              FragmentIQ
             </Link>
           </div>
 
@@ -130,7 +130,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="text-center text-base text-muted-foreground">
-          © 2026 Understanding recurring code fragments across ecosystems
+          © 2026 FragmentIQ — Understanding recurring code fragments across ecosystems
         </p>
       </div>
     </footer>

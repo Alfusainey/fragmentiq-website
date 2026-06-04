@@ -19,7 +19,7 @@ export function Navbar() {
       <nav className="flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-xl font-semibold tracking-tight text-foreground">
-          Distributed Code Intelligence
+          FragmentIQ
         </Link>
 
         {/* Desktop Navigation */}
