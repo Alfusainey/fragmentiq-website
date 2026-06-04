@@ -32,12 +32,10 @@ const faqItems = [
 ];
 
 export function Faq() {
-  const [openItems, setOpenItems] = useState<number[]>([0, 1, 2, 3, 4]);
+  const [openItem, setOpenItems] = useState<number | null>(null);
 
   const toggleItem = (index: number) => {
-    setOpenItems((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
+    setOpenItems((prev) => (prev === index ? null : index));
   };
 
   return (
@@ -63,7 +61,7 @@ export function Faq() {
                   {item.question}
                 </span>
                 <span className="flex-shrink-0 mt-1">
-                  {openItems.includes(index) ? (
+                  {openItem === index ? (
                     <X className="w-5 h-5 md:w-6 md:h-6 text-neutral-400" />
                   ) : (
                     <Plus className="w-5 h-5 md:w-6 md:h-6 text-neutral-400" />
@@ -73,7 +71,7 @@ export function Faq() {
 
               <div
                 className={`grid transition-all duration-300 ease-in-out ${
-                  openItems.includes(index)
+                  openItem === index
                     ? "grid-rows-[1fr] opacity-100"
                     : "grid-rows-[0fr] opacity-0"
                 }`}
