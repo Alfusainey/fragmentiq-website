@@ -58,7 +58,10 @@ In 2026, Claude Mythos rediscovered and fixed the vulnerability in FreeBSD, near
 
             </p>
             <p className="text-base leading-relaxed text-neutral-300 sm:text-xl sm:leading-loose md:text-xl md:leading-relaxed">
-              Security vulnerabilities are only one example of intelligence that can become disconnected across semantically related code fragments. API deprecations, performance improvements, licensing risks, reliability fixes, and bug-related discussions across issue trackers, patch reviews, and developer forums often fail to propagate as fragments evolve independently across software ecosystems.
+              Security vulnerabilities are only one example of intelligence that can become disconnected across semantically related code fragments.
+              API deprecations, performance improvements, licensing risks, reliability fixes, and bug-related discussions across issue trackers, 
+              patch reviews, and developer forums are also intelligence that may become disconnected across related code fragments.
+              
             </p>
 
             {/*<ul className="space-y-4 text-base leading-relaxed text-neutral-200 sm:space-y-5 sm:text-lg md:text-xl">

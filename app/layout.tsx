@@ -21,23 +21,23 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: 'Distributed Code Intelligence — Ecosystem-wide Awareness for Shared Code',
   description: 'Track vulnerabilities, fixes, API changes, discussions, licensing risks, and operational intelligence across repositories, forums, internal projects, and AI-generated code.',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  // icons: {
+  //   icon: [
+  //     {
+  //       url: '/icon-light-32x32.png',
+  //       media: '(prefers-color-scheme: light)',
+  //     },
+  //     {
+  //       url: '/icon-dark-32x32.png',
+  //       media: '(prefers-color-scheme: dark)',
+  //     },
+  //     {
+  //       url: '/icon.svg',
+  //       type: 'image/svg+xml',
+  //     },
+  //   ],
+  //   apple: '/apple-icon.png',
+  // },
 }
 
 export default function RootLayout({
