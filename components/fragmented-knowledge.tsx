@@ -57,8 +57,7 @@ In 2026, Claude Mythos rediscovered and fixed the vulnerability in FreeBSD, near
               This is the operational blind spot of distributed code reuse
           </p>
             <p className="text-base leading-relaxed text-neutral-300 sm:text-xl sm:leading-loose md:text-xl md:leading-relaxed">
-              Security fixes often remain local, while semantically related fragments continue evolving independently across open-source projects, documentation, internal systems, and AI-generated code. 
-
+              Security fixes often remain local, while semantically related fragments elsewhere in the ecosystem remain unaware of the associated fixes and continue evolving independently across open-source projects, documentation, internal systems, and AI-generated code.
             </p>
             <p className="text-base leading-relaxed text-neutral-300 sm:text-xl sm:leading-loose md:text-xl md:leading-relaxed">
               Security vulnerabilities are only one example of intelligence that can become disconnected across semantically related code fragments.
