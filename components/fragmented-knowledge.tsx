@@ -47,8 +47,11 @@ In 2026, Claude Mythos rediscovered and fixed the vulnerability in FreeBSD, near
               For nearly two decades, the vulnerability knowledge remained isolated to one codebase while related fragments elsewhere silently evolved independently.
 
             </p>
-            {/*<p className="text-base leading-relaxed text-neutral-300 sm:text-xl sm:leading-loose md:text-xl md:leading-relaxed">
-            </p>*/}
+            <p className="text-base leading-relaxed text-neutral-300 sm:text-xl sm:leading-loose md:text-xl md:leading-relaxed">
+            We also found similar <b>disconnected vulnerability knowledge</b> between Stack Overflow and open-source projects.
+            A vulnerable code fragment from Stack Overflow later appeared in the Apache Solr and Apache Chemistry projects. 
+            Although the vulnerability was eventually fixed on Stack Overflow, the maintainers of the Apache projects had no knowledge about the fix associated with the related fragment on Stack Overflow.
+            </p>
 
           <p className="border-l-4 border-white pl-5 text-2xl font-medium leading-snug text-white md:text-3xl">
               This is the operational blind spot of distributed code reuse
