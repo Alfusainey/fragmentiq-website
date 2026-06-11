@@ -7,17 +7,29 @@ const faqItems = [
   {
     question: "What are recurring code fragments?",
     answer:
-      "Recurring code fragments are semantically or structurally similar pieces of code that appear across repositories, documentation, Stack Overflow answers, internal projects, and AI-generated code. Over time, these fragments evolve independently while still sharing similar operational and security characteristics",
+      `Recurring code fragments are semantically or structurally similar pieces of code that appear across internal codebases, open-source repositories, Stack Overflow answers, documentations, blogs, and other sources of developer knowledge.
+
+Although these fragments may share similar functionality, they often evolve independently over time while having similar operational and security characteristics.`,
   },
   {
     question: "What kinds of intelligence can propagate across related code fragments?",
     answer:
-      "Security vulnerabilities are only one example. Other forms of intelligence may also become disconnected across related fragments, including API deprecations, performance improvements, reliability fixes, licensing risks, and bug-related discussions across issue trackers, patch reviews, and developer forums.",
+      `Security vulnerabilities are only one example. 
+      Other forms of intelligence may also become disconnected across related fragments, including API deprecations, performance improvements, reliability fixes, licensing risks, and bug-related discussions across issue trackers, patch reviews, and developer forums.`,
   },
   {
     question: "Why do related fragments evolve independently?",
     answer:
-      "Once code fragments spread across ecosystems, they are rarely connected through traditional dependency relationships. Existing tooling typically tracks packages and libraries — not semantically related fragments distributed across repositories, forums, documentation, and AI-generated code.",
+      `Shared code fragments exist in unrelated open-source projects, internal company codebases, documentations, blogs, and Q&A forums and are maintained by different teams, organizations, and communities that have no shared ownership or coordination mechanisms.
+As a result, improvements, security fixes, bug fixes, and other valuable knowledge discovered in one fragment rarely propagates to semantically related fragments elsewhere.
+
+Existing tooling primarily tracks dependencies between packages and libraries—not semantically related code fragments distributed across ecosystems.`,
+  },
+  {
+    question: "How do coding assistants affect this problem?",
+    answer: `Recurring code fragments are not new. However, the growing adoption of coding assistants may significantly amplify their propagation across software ecosystems and further fragment the intelligence associated with them.
+
+    By generating, adapting, and reusing code at scale, coding assistants can increase the number of semantically similar fragments distributed across repositories, documentation, Q&A forums, and internal codebases, making effective mechanisms for sharing knowledge across related fragments increasingly important.`
   },
   {
     question: "How is this different from SCA and SBOM tools?",
@@ -77,9 +89,13 @@ export function Faq() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="px-6 pb-6 md:px-8 md:pb-8 text-lg leading-relaxed text-neutral-300 md:text-xl lg:text-xl lg:leading-relaxed">
-                    {item.answer}
-                  </p>
+                  <div className="px-6 pb-6 md:px-8 md:pb-8 space-y-4">
+                    {item.answer.split("\n\n").map((para, i) => (
+                      <p key={i} className="text-lg leading-relaxed text-neutral-300 md:text-xl lg:text-xl lg:leading-relaxed">
+                        {para.trim()}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
