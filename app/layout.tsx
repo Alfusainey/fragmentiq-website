@@ -19,8 +19,15 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Distributed Code Intelligence — Ecosystem-wide Awareness for Shared Code',
-  description: 'Track vulnerabilities, fixes, API changes, discussions, licensing risks, and operational intelligence across repositories, forums, internal projects, and AI-generated code.',
+  title: 'Track Knowledge Across Recurring Code Fragments',
+  description: 'Track vulnerabilities, fixes, API changes, discussions, licensing risks, and operational intelligence across repositories, forums, and internal projects',
+  openGraph: {
+    title: 'Track Knowledge Across Recurring Code Fragments',
+    description: 'Track vulnerabilities, fixes, API changes, discussions, licensing risks, and operational intelligence across repositories, forums, and internal projects',
+    url: 'https://fragmentiq.ai',
+    siteName: 'FragmentIQ',
+    type: 'website',
+  },
   // icons: {
   //   icon: [
   //     {
